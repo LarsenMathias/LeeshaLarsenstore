@@ -7,7 +7,7 @@ from django.http import JsonResponse
 import json
 from django.contrib import messages
 from .forms import UserprofileModelform,RegistrationForm
-import requests
+
 def signup(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
